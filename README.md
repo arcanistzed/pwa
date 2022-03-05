@@ -4,6 +4,8 @@
 
 Install Foundry as a Progressive Web App with its own shortcut and window.
 
+Have you ever wanted your players to have their own app for Foundry VTT? Perhaps they get distracted otherwise or perhaps you just like how cool it looks. I even recommend using this if you are a gamemaster that always has their browser open anyway, since it will be less taxing on your computer's resources!
+
 ![Install Prompt](https://i.imgur.com/YWyc0x4.png)
 
 ![Once Installed](https://i.imgur.com/pvBRGmd.png)
