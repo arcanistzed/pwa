@@ -1,7 +1,7 @@
 {
   "name": "pwa",
   "title": "Progressive Web App",
-  "description": "Install Foundry as a Progressive Web App with it's own shortcut and window.",
+  "description": "Install Foundry VTT as a Progressive Web App with it's own shortcut and window",
   "author": "Arcanist",
   "authors": [
     {
