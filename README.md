@@ -4,8 +4,9 @@
 
 Install Foundry as a Progressive Web App with it's own shortcut and window.
 
-![PWA](https://img.shields.io/badge/PWA-%23141518?style=flat-square&logo=pwa)
 ![Install Prompt](https://i.imgur.com/sJx1x0u.png)
+
+![Once Installed](https://i.imgur.com/sJx1x0u.png)
 
 ## Installation
 
