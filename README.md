@@ -2,7 +2,7 @@
 
 ![Version](https://img.shields.io/github/v/tag/arcanistzed/pwa?label=Version&style=flat-square&color=2577a1) ![Latest Release Download Count](https://img.shields.io/github/downloads/arcanistzed/pwa/latest/module.zip?label=Downloads&style=flat-square&color=9b43a8) ![Supported Foundry Versions](https://img.shields.io/endpoint?url=https://foundryshields.com/version?url=https://raw.githubusercontent.com/arcanistzed/pwa/main/module.json&style=flat-square&color=ff6400) [![Discord Server](https://img.shields.io/badge/-Discord-%232c2f33?style=flat-square&logo=discord)](https://discord.gg/AAkZWWqVav) [![Patreon](https://img.shields.io/badge/-Patreon-%23141518?style=flat-square&logo=patreon)](https://www.patreon.com/bePatron?u=15896855)
 
-Install Foundry as a Progressive Web App with it's own shortcut and window.
+Install Foundry as a Progressive Web App with its own shortcut and window.
 
 ![Install Prompt](https://i.imgur.com/YWyc0x4.png)
 
