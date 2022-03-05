@@ -4,7 +4,7 @@
 
 Install Foundry as a Progressive Web App with it's own shortcut and window.
 
-![Install Prompt](https://i.imgur.com/sJx1x0u.png)
+![Install Prompt](https://i.imgur.com/YWyc0x4.png)
 
 ![Once Installed](https://i.imgur.com/pvBRGmd.png)
 
