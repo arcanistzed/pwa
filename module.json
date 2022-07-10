@@ -1,8 +1,8 @@
 {
+  "id": "pwa",
   "name": "pwa",
   "title": "Progressive Web App",
   "description": "Install Foundry VTT as a Progressive Web App with its own shortcut and window",
-  "author": "Arcanist",
   "authors": [
     {
       "name": "Arcanist",
@@ -21,8 +21,12 @@
     "allowBugReporter": true
   },
   "version": "This is auto replaced",
+  "compatibility": {
+    "minimum": "0.7.9",
+    "verified": "10"
+  },
   "minimumCoreVersion": "0.7.9",
-  "compatibleCoreVersion": "9",
+  "compatibleCoreVersion": "10",
   "esmodules": [
     "scripts/module.js"
   ],
