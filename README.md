@@ -32,6 +32,6 @@ Come hang out on my [my Discord server](https://discord.gg/AAkZWWqVav) or [click
 
 ## License
 
-Copyright © 2021 arcanist
+Copyright © 2022 arcanist
 
 This package is under an [MIT license](LICENSE) and the [Foundry Virtual Tabletop Limited License Agreement for module development](https://foundryvtt.com/article/license/).
