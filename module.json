@@ -1,48 +1,51 @@
 {
-  "id": "pwa",
-  "name": "pwa",
-  "title": "Progressive Web App",
-  "description": "Install Foundry VTT as a Progressive Web App with its own shortcut and window",
-  "authors": [
-    {
-      "name": "Arcanist",
-      "url": "https://arcanist.me",
-      "email": "arcanistzed@gmail.com",
-      "discord": "arcanist#4317",
-      "reddit": "u/arcanistzed"
-    }
-  ],
-  "url": "This is auto replaced",
-  "license": "https://github.com/arcanistzed/pwa/blob/main/LICENSE",
-  "readme": "https://github.com/arcanistzed/pwa/blob/main/README.md",
-  "bugs": "https://github.com/arcanistzed/pwa/issues/new/choose",
-  "changelog": "https://github.com/arcanistzed/pwa/blob/main/CHANGELOG.md",
-  "flags": {
-    "allowBugReporter": true
-  },
-  "version": "This is auto replaced",
-  "compatibility": {
-    "minimum": "0.7.9",
-    "verified": "10"
-  },
-  "minimumCoreVersion": "0.7.9",
-  "compatibleCoreVersion": "10",
-  "esmodules": [
-    "scripts/module.js"
-  ],
-  "manifest": "This is auto replaced",
-  "download": "This is auto replaced",
-  "manifestPlusVersion": "1.2.0",
-  "media": [
-    {
-      "type": "cover",
-      "url": "https://i.imgur.com/YWyc0x4.png",
-      "caption": "Progressive Web App!"
+    "id": "pwa",
+    "name": "pwa",
+    "title": "Progressive Web App",
+    "description": "Install Foundry VTT as a Progressive Web App with its own shortcut and window",
+    "authors": [
+        {
+            "name": "Arcanist",
+            "url": "https://arcanist.me",
+            "email": "arcanistzed@gmail.com",
+            "discord": "arcanist#4317",
+            "reddit": "u/arcanistzed"
+        }
+    ],
+    "url": "This is auto replaced",
+    "license": "https://github.com/arcanistzed/pwa/blob/main/LICENSE",
+    "readme": "https://github.com/arcanistzed/pwa/blob/main/README.md",
+    "bugs": "https://github.com/arcanistzed/pwa/issues/new/choose",
+    "changelog": "https://github.com/arcanistzed/pwa/blob/main/CHANGELOG.md",
+    "flags": {
+        "allowBugReporter": true
     },
-    {
-      "type": "screenshot",
-      "url": "https://i.imgur.com/pvBRGmd.png",
-      "caption": "The shortcut and window of the PWA in action"
-    }
-  ]
+    "version": "This is auto replaced",
+    "compatibility": {
+        "minimum": "0.7.9",
+        "verified": "10"
+    },
+    "minimumCoreVersion": "0.7.9",
+    "compatibleCoreVersion": "10",
+    "esmodules": [
+        "scripts/pwa.js"
+    ],
+    "scripts": [
+        "scripts/webpush-browserify-bundle.js"
+    ],
+    "manifest": "This is auto replaced",
+    "download": "This is auto replaced",
+    "manifestPlusVersion": "1.2.0",
+    "media": [
+        {
+            "type": "cover",
+            "url": "https://i.imgur.com/YWyc0x4.png",
+            "caption": "Progressive Web App!"
+        },
+        {
+            "type": "screenshot",
+            "url": "https://i.imgur.com/pvBRGmd.png",
+            "caption": "The shortcut and window of the PWA in action"
+        }
+    ]
 }
