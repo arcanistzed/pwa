@@ -1,3 +1,5 @@
+import PushNotifications from "./push.js";
+
 (async () => {
 	/** Web Manifest */
 	const manifest = JSON.stringify({
@@ -39,9 +41,7 @@
 			);
 
 			Hooks.once("ready", () => {
-				ui.notifications.info(
-					"PWA manifest created. Please reload the page to see the install button."
-				);
+				ui.notifications.info("PWA manifest created. Please reload the page to see the install button.");
 			});
 		}
 	});
@@ -59,13 +59,9 @@
 							label: "Download",
 							callback: () => {
 								saveDataToFile(
-									new File(
-										[serviceWorker],
-										"service-worker.js",
-										{
-											type: "application/javascript",
-										}
-									),
+									new File([serviceWorker], "service-worker.js", {
+										type: "application/javascript",
+									}),
 									"application/javascript",
 									"service-worker.js"
 								);
@@ -82,9 +78,9 @@
 
 	// Warn about requiring HTTPS
 	Hooks.once("ready", () => {
-		if (document.location.protocol !== "https:")
+		if (!window.isSecureContext)
 			ui.notifications.warn(
-				`Due to browser restrictions, the PWA module requires an HTTPS connection. See <a href="https://foundryvtt.com/article/ssl/">the core documentation</a> for details on setting that up.`,
+				`Due to browser restrictions, the PWA module requires a secure origin. Simply accessing your game via <code>localhost</code> or <code>127.0.0.1</code> is sufficient. If that's not possible, you may need an <a href="https://foundryvtt.com/article/ssl/">SSL certificate</a>.`,
 				{ permanent: true }
 			);
 	});
@@ -95,6 +91,20 @@
 	link.href = "/manifest.json";
 	document.head.append(link);
 
-	// Register a dummy service worker
-	navigator.serviceWorker.register("/service-worker.js");
+	// Register a service worker
+	if ("serviceWorker" in navigator) {
+		navigator.serviceWorker
+			.register("/service-worker.js")
+			.then(registration => {
+				console.log("Service Worker is registered", registration);
+				Hooks.once("init", () => {
+					new PushNotifications(registration);
+				});
+			})
+			.catch(err => {
+				console.error("Service Worker Error", err);
+			});
+	} else {
+		console.warn("Service Workers are not supported");
+	}
 })();
